@@ -7,12 +7,12 @@ The script "run_analysis.R" reads the UCI HAR data and converts it into a labele
 
 First the script reads the test and training datasets individually, along with the activity labels and subjects. 
 
-1. The test and training datasets are combined using the rbind command.
+1. The test and training datasets are combined using the `rbind` command.
 
-2. Only the variables corresponding to means and standard deviations for each measurement are extracted using the grep command. The activity and subject labels are preserved.
+2. Only the variables corresponding to means and standard deviations for each measurement are extracted using the `grep` command. The activity and subject labels are preserved.
 
-3. The activity variable was initially coded 1 - 6. This variable is converted to a factor and the levels are changed to a description of the activity.
+3. The activity variable was initially coded 1 - 6. This variable is converted to a factor and the levels are changed to a description of the activity using `fct_recode`.
 
 4. There are numerous abbreviations in the variable names. The variable names are made to be more descriptive.
 
-5. The average of each variable for each activity and each subject is computed using group_by and summarise. This is assigned to a new dataset (averages).
+5. The average of each variable for each activity and each subject is computed using `group_by` and `summarise`. This is assigned to a new dataset (averages).
