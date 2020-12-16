@@ -2,7 +2,7 @@
 This is the course project for Getting and Cleaning Data. It uses the Human Activity Recognition Using Smartphones Dataset from the UCI Machine Learning Repository.
 <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
 
-============================
+============================  
 The script "run_analysis.R" reads the UCI HAR data and converts it into a labeled, tidy dataset with the means and standard deviations for each measurement. It also creates a second tidy dataset that contains the averages of each variable for each activity and subject.
 
 First the script reads the test and training datasets individually, along with the activity labels and subjects. 
